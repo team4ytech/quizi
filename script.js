@@ -39,6 +39,9 @@ function startQuiz() {
         case 'tthcm':
             dataSource = (typeof questionsHCM !== 'undefined') ? questionsHCM : null;
             break;
+        case 'ktct':
+            dataSource = (typeof questionsKTCT !== 'undefined') ? questionsKTCT : null;
+            break;    
         default:
             dataSource = null;
     }

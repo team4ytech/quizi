@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz by 4YTECH - </title>
+    <title>Quiz by 4YTECH</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -16,14 +16,15 @@
         <div id="start-screen">
             <h1 class="gradient-text">4YTECH</h1>
             <div class="setup-card">
+                <p><i class="fas fa-user-circle"></i> Chào <strong>bạn</strong></p>
                 <div class="input-group">
                     <label for="subject">Chọn môn học:</label>
                     <select id="subject">
-                        <option value="triet">Triết học Mác Lênin</option>
-                        <option value="ktct">Kinh tế chính trị Mác Lênin</option>
-                        <option value="cnxh" selected>Chủ nghĩa xã hội khoa học</option>
+                        <option value="lsd">Lịch sử đảng</option>
+                        <option value="cnxh" selected>Xã hội chủ nghĩa</option>
+                        <option value="triet">Triết học Mác</option>
                         <option value="tthcm">Tư tưởng Hồ Chí Minh</option>
-                        <option value="lsd">Lịch sử Đảng Cộng sản Việt Nam</option>
+                        <option value="ktct">Kinh tế chính trị</option>
                     </select>
                     <label for="question-limit">Chọn số lượng câu hỏi:</label>
                     <select id="question-limit">
@@ -38,7 +39,6 @@
         </div>
 
         <div id="quiz-screen" style="display: none;">
-            <div class="brand-label">4YTECH</div>
             <div class="progress-container">
                 <div class="progress-bar" id="bar"></div>
             </div>
@@ -70,7 +70,7 @@
         </div>
 
         <p class="service-desc">
-            Chuyên xây dựng <strong>Website</strong> & Hỗ trợ bài tập lớn (WinForms, Web). 
+            Chuyên xây dựng <strong>Website, Mobile App, AI</strong> & Hỗ trợ bài tập lớn (WinForms, Web). 
             Nhận outsource dự án Nghiên cứu khoa học <strong>uy tín.</strong>
         </p>
 
@@ -112,6 +112,8 @@
     <script src="database/db_xhcn.js"></script>    
     <script src="database/db_LSD.js"></script>
     <script src="database/db_triet.js"></script>
+    <script src="database/db_KTCT.js"></script>
+    <script src="database/db_TTHCM.js"></script>
     <script src="script.js"></script>
 </body>
 
