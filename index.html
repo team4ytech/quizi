@@ -1,120 +1,114 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz by 4YTECH</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4YTECH Quiz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="quiz-container" id="quiz-app">
-        <div id="start-screen">
-            <h1 class="gradient-text">4YTECH</h1>
-            <div class="setup-card">
-                <p><i class="fas fa-user-circle"></i> Chào <strong>bạn</strong></p>
-                <div class="input-group">
-                    <label for="subject">Chọn môn học:</label>
-                    <select id="subject">
-                        <option value="lsd">Lịch sử đảng</option>
-                        <option value="cnxh" selected>Xã hội chủ nghĩa</option>
-                        <option value="triet">Triết học Mác</option>
-                        <option value="tthcm">Tư tưởng Hồ Chí Minh</option>
-                        <option value="ktct">Kinh tế chính trị</option>
-                    </select>
-                    <label for="question-limit">Chọn số lượng câu hỏi:</label>
-                    <select id="question-limit">
-                        <option value="10">10 câu hỏi</option>
-                        <option value="20" selected>20 câu hỏi (Mặc định)</option>
-                        <option value="50">50 câu hỏi</option>
-                        <option value="100">Tất cả 100 câu</option>
-                    </select>
-                </div>
-                <button class="main-btn" onclick="showPopup()">Bắt đầu học <i class="fas fa-play"></i></button>
-            </div>
-        </div>
+<div class="quiz-container">
 
-        <div id="quiz-screen" style="display: none;">
-            <div class="progress-container">
-                <div class="progress-bar" id="bar"></div>
-            </div>
-            <div class="quiz-meta">
-                <span id="q-count">Câu 1/20</span>
-                <span id="score-live">Điểm: 0</span>
-            </div>
-            <h2 id="question-display">Đang tải...</h2>
-            <div id="options-grid" class="options-grid"></div>
-            <div id="feedback"></div>
-        </div>
+<div id="start">
 
-        <div id="result-screen" style="display: none;">
-            <div class="trophy-icon"><i class="fas fa-award"></i></div>
-            <h2>Hoàn Thành!</h2>
-            <div class="final-score" id="final-score">0/0</div>
-            <p id="rank-msg"></p>
-            <button class="main-btn" onclick="location.reload()">Làm lại bài <i class="fas fa-redo"></i></button>
-        </div>
-    </div>
-
-    <div class="popup-overlay" id="popup">
-    <div class="popup-content">
-        <div class="popup-header">
-            <div class="icon-box">
-                <i class="fas fa-rocket"></i>
-            </div>
-            <h3>Dịch Vụ Công Nghệ & Phần Mềm</h3>
-        </div>
-
-        <p class="service-desc">
-            Chuyên xây dựng <strong>Website, Mobile App, AI</strong> & Hỗ trợ bài tập lớn (WinForms, Web). 
-            Nhận outsource dự án Nghiên cứu khoa học <strong>uy tín.</strong>
-        </p>
-
-        <div class="contact-section">
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <span class="member-name">Hoàng Huyền Linh</span>
-                    <div class="contact-links">
-                        <a href="tel:0376740352" class="contact-link zalo">
-                            <i class="fas fa-comment-dots"></i> Zalo: 0376740352
-                        </a>
-                        <a href="https://www.facebook.com/lizarddh" target="_blank" class="contact-link fb">
-                            <i class="fab fa-facebook"></i> Facebook
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <span class="member-name">Nguyễn Bình</span>
-                    <div class="contact-links">
-                        <a href="tel:0822612822" class="contact-link zalo">
-                            <i class="fas fa-comment-dots"></i> Zalo: 0822612822
-                        </a>
-                        <a href="https://www.facebook.com/nguyen.binh.604032" target="_blank" class="contact-link fb">
-                            <i class="fab fa-facebook"></i> Facebook
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-          
-        </div>
-
-        <button class="main-btn pulse-effect" onclick="startQuiz()">
-            Bắt đầu làm bài <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
+<div class="header">
+<div class="logo">4YTECH</div>
+<div class="tagline">
+Your code • Your product • Your money • Your future
 </div>
-    <script src="database/db_xhcn.js"></script>    
-    <script src="database/db_LSD.js"></script>
-    <script src="database/db_triet.js"></script>
-    <script src="database/db_KTCT.js"></script>
-    <script src="database/db_TTHCM.js"></script>
-    <script src="script.js"></script>
-</body>
+</div>
 
+<div class="user">
+
+<div class="click-text">Click here</div>
+
+<div class="avatar-btn" onclick="openPopup()">
+<img src="https://i.postimg.cc/c1ky0k4T/anhteam.jpg">
+</div>
+
+<div>Hello bạn 👋</div>
+
+</div>
+
+<div class="setup-card">
+
+<div class="input-group">
+<label>Chọn số câu</label>
+<select id="limit">
+<option value="10">10</option>
+<option value="20" selected>20</option>
+<option value="50">50</option>
+</select>
+</div>
+
+<button class="main-btn" onclick="startQuiz()">Bắt đầu</button>
+
+</div>
+
+</div>
+
+<div id="quiz" style="display:none">
+
+<div class="progress-container">
+<div class="progress-bar" id="bar"></div>
+</div>
+
+<div id="qCount"></div>
+
+<div id="question" class="question"></div>
+
+<div id="options" class="options"></div>
+
+</div>
+
+<div id="result" style="display:none" class="result">
+
+<h2>Hoàn thành 🎉</h2>
+
+<div id="score"></div>
+
+<button class="main-btn" onclick="location.reload()">Làm tiếp</button>
+
+</div>
+
+</div>
+
+<div class="popup-overlay" id="popup">
+
+<div class="popup-content">
+
+<h3>Dịch Vụ Công Nghệ & Phần Mềm</h3>
+
+<p>Chuyên xây dựng Website, Mobile App, AI</p>
+
+<div class="contact-item">
+<span class="member-name">Hoàng Huyền Linh</span>
+<a href="tel:0376740352">Zalo</a> |
+<a href="https://www.facebook.com/lizarddh" target="_blank">FB</a>
+</div>
+
+<div class="contact-item">
+<span class="member-name">Nguyễn Bình</span>
+<a href="tel:0822612822">Zalo</a> |
+<a href="https://www.facebook.com/nguyen.binh.604032" target="_blank">FB</a>
+</div>
+
+<button class="main-btn" onclick="closePopup()">Quay lại</button>
+
+</div>
+
+</div>
+
+<audio id="correctSound" src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+<audio id="wrongSound" src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-buzz-950.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
 </html>
