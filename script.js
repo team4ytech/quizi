@@ -129,6 +129,7 @@ border-radius:12px;
 cursor:pointer;
 font-weight:600;
 color:white;
+
 background:linear-gradient(270deg,#f9d423,#fc4a1a,#ff512f,#dd2476);
 background-size:600% 600%;
 animation:moveGradient 8s ease infinite;
@@ -167,6 +168,7 @@ border:none;
 font-weight:700;
 cursor:pointer;
 color:white;
+
 background:linear-gradient(270deg,#ff512f,#dd2476,#f9d423,#fc4a1a);
 background-size:600% 600%;
 animation:moveGradient 6s ease infinite;
