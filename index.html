@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4YTECH Quiz</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>4YTECH Quiz</title>
-
+```
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
+<!-- CSS -->
 <link rel="stylesheet" href="style.css">
+```
 
 </head>
 
@@ -16,105 +20,135 @@
 
 <div class="quiz-container">
 
+```
+<!-- START SCREEN -->
 <div id="start">
 
-<div class="header">
-<div class="logo">4YTECH</div>
-<div class="tagline">
-Your code • Your product • Your money • Your future
+    <div class="header">
+        <div class="logo">4YTECH</div>
+        <div class="tagline">
+            Your code • Your product • Your money • Your future
+        </div>
+    </div>
+
+    <div class="user">
+        <div class="click-text">Click here</div>
+
+        <div class="avatar-btn" onclick="openPopup()">
+            <img src="https://i.postimg.cc/c1ky0k4T/anhteam.jpg" alt="avatar">
+        </div>
+
+        <div>Hello bạn 👋</div>
+    </div>
+
+    <div class="setup-card">
+
+        <div class="input-group">
+            <label>Chọn môn học</label>
+            <select id="subject">
+                <option value="KTCT">Kinh tế chính trị</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Chọn số câu</label>
+            <select id="limit">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="50">50</option>
+            </select>
+        </div>
+
+        <button class="main-btn" onclick="startQuiz()">
+            Bắt đầu
+        </button>
+
+    </div>
+
 </div>
-</div>
 
-<div class="user">
-
-<div class="click-text">Click here</div>
-
-<div class="avatar-btn" onclick="openPopup()">
-<img src="https://i.postimg.cc/c1ky0k4T/anhteam.jpg">
-</div>
-
-<div>Hello bạn 👋</div>
-
-</div>
-
-<div class="setup-card">
-
-<div class="input-group">
-<label>Chọn môn học</label>
-<select id="subject">
-<option value="KTCT">Kinh tế chính trị</option>
-</select>
-</div>
-
-<div class="input-group">
-<label>Chọn số câu</label>
-<select id="limit">
-<option value="10">10</option>
-<option value="20" selected>20</option>
-<option value="50">50</option>
-</select>
-</div>
-
-<button class="main-btn" onclick="startQuiz()">Bắt đầu</button>
-
-</div>
-
-</div>
-
+<!-- QUIZ -->
 <div id="quiz" style="display:none">
 
-<div class="progress-container">
-<div class="progress-bar" id="bar"></div>
+    <div class="progress-container">
+        <div class="progress-bar" id="bar"></div>
+    </div>
+
+    <div id="qCount"></div>
+
+    <div id="question" class="question"></div>
+
+    <div id="options" class="options"></div>
+
 </div>
 
-<div id="qCount"></div>
-
-<div id="question" class="question"></div>
-
-<div id="options" class="options"></div>
-
-</div>
-
+<!-- RESULT -->
 <div id="result" style="display:none" class="result">
 
-<h2>Hoàn thành 🎉</h2>
+    <h2>Hoàn thành 🎉</h2>
 
-<div id="score"></div>
+    <div id="score"></div>
 
-<button class="main-btn" onclick="location.reload()">Làm tiếp</button>
+    <button class="main-btn" onclick="location.reload()">
+        Làm tiếp
+    </button>
+
+</div>
+```
 
 </div>
 
-</div>
+<!-- POPUP -->
 
 <div class="popup-overlay" id="popup">
 
+```
 <div class="popup-content">
 
-<h3>Dịch Vụ Công Nghệ & Phần Mềm</h3>
+    <h3>Dịch Vụ Công Nghệ & Phần Mềm</h3>
 
-<p>Chuyên xây dựng Website, Mobile App, AI</p>
+    <p>
+        Chuyên xây dựng Website, Mobile App, AI
+    </p>
 
-<div class="contact-item">
-<span class="member-name">Hoàng Huyền Linh</span>
-<a href="tel:0376740352">Zalo</a> |
-<a href="https://www.facebook.com/lizarddh" target="_blank">FB</a>
+    <div class="contact-item">
+        <span class="member-name">
+            Hoàng Huyền Linh
+        </span>
+
+        <a href="tel:0376740352">Zalo</a> |
+        <a href="https://www.facebook.com/lizarddh" target="_blank">
+            FB
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <span class="member-name">
+            Nguyễn Bình
+        </span>
+
+        <a href="tel:0822612822">Zalo</a> |
+        <a href="https://www.facebook.com/nguyen.binh.604032" target="_blank">
+            FB
+        </a>
+    </div>
+
+    <button class="main-btn" onclick="closePopup()">
+        Quay lại
+    </button>
+
+</div>
+```
+
 </div>
 
-<div class="contact-item">
-<span class="member-name">Nguyễn Bình</span>
-<a href="tel:0822612822">Zalo</a> |
-<a href="https://www.facebook.com/nguyen.binh.604032" target="_blank">FB</a>
-</div>
-
-<button class="main-btn" onclick="closePopup()">Quay lại</button>
-
-</div>
-
-</div>
+<!-- SOUND -->
 
 <audio id="correctSound" src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+
 <audio id="wrongSound" src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-buzz-950.mp3"></audio>
+
+<!-- JS -->
 
 <script src="script.js"></script>
 
