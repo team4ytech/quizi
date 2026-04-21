@@ -57,7 +57,9 @@ function startQuiz(){
 
 const limit=parseInt(document.getElementById("limit").value);
 
-pool=[...questions].sort(()=>Math.random()-0.5).slice(0,limit);
+pool=[...questions]
+.sort(()=>Math.random()-0.5)
+.slice(0,limit);
 
 index=0;
 score=0;
@@ -84,7 +86,9 @@ const optionsDiv=document.getElementById("options");
 
 optionsDiv.innerHTML="";
 
-q.options.sort(()=>Math.random()-0.5).forEach(opt=>{
+q.options
+.sort(()=>Math.random()-0.5)
+.forEach(opt=>{
 
 const btn=document.createElement("div");
 
@@ -118,7 +122,8 @@ wrongSound.play();
 
 }
 
-document.querySelectorAll(".option").forEach(o=>{
+document.querySelectorAll(".option")
+.forEach(o=>{
 if(o.innerText===q.answer){
 o.classList.add("correct");
 }
