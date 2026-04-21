@@ -129,7 +129,6 @@ border-radius:12px;
 cursor:pointer;
 font-weight:600;
 color:white;
-
 background:linear-gradient(270deg,#f9d423,#fc4a1a,#ff512f,#dd2476);
 background-size:600% 600%;
 animation:moveGradient 8s ease infinite;
@@ -148,54 +147,6 @@ background:#22c55e !important;
 background:#ef4444 !important;
 }
 
-.correct-animate{
-animation:popCorrect 0.4s ease;
-}
-
-@keyframes popCorrect{
-0%{transform:scale(1);}
-50%{transform:scale(1.2);}
-100%{transform:scale(1);}
-}
-
-.wrong-animate{
-animation:flashWrong 0.5s ease;
-}
-
-@keyframes flashWrong{
-0%{background:#ef4444;}
-50%{background:#b91c1c;}
-100%{background:#ef4444;}
-}
-
-.shake{
-animation:shake 0.4s;
-}
-
-@keyframes shake{
-0%{transform:translateX(0)}
-25%{transform:translateX(-5px)}
-50%{transform:translateX(5px)}
-75%{transform:translateX(-5px)}
-100%{transform:translateX(0)}
-}
-
-.confetti{
-position:fixed;
-width:8px;
-height:8px;
-top:-10px;
-z-index:9999;
-animation:fall 1s linear forwards;
-}
-
-@keyframes fall{
-to{
-transform:translateY(100vh) rotate(360deg);
-opacity:0;
-}
-}
-
 .main-btn{
 width:100%;
 padding:14px;
@@ -204,24 +155,15 @@ border:none;
 font-weight:700;
 cursor:pointer;
 color:white;
-
 background:linear-gradient(270deg,#ff512f,#dd2476,#f9d423,#fc4a1a);
 background-size:600% 600%;
 animation:moveGradient 6s ease infinite;
-}
-
-.main-btn:hover{
-transform:scale(1.05);
 }
 
 @keyframes moveGradient{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
-}
-
-.result{
-text-align:center;
 }
 
 .popup-overlay{
@@ -248,34 +190,4 @@ border-radius:28px;
 max-width:500px;
 width:95%;
 text-align:center;
-}
-
-.contact-item{
-background:#f8fafc;
-padding:12px;
-border-radius:16px;
-margin-bottom:10px;
-}
-
-.member-name{
-font-weight:800;
-display:block;
-margin-bottom:5px;
-}
-
-@media(max-width:500px){
-
-.quiz-container{
-padding:18px;
-}
-
-.option{
-padding:12px;
-font-size:0.9rem;
-}
-
-.logo{
-font-size:1.6rem;
-}
-
 }
