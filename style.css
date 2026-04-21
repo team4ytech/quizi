@@ -148,14 +148,18 @@ background:#22c55e !important;
 background:#ef4444 !important;
 }
 
+.correct-animate{
+animation:popCorrect 0.4s ease;
+}
+
 @keyframes popCorrect{
 0%{transform:scale(1);}
 50%{transform:scale(1.2);}
 100%{transform:scale(1);}
 }
 
-.correct-animate{
-animation:popCorrect 0.4s ease;
+.wrong-animate{
+animation:flashWrong 0.5s ease;
 }
 
 @keyframes flashWrong{
@@ -164,8 +168,8 @@ animation:popCorrect 0.4s ease;
 100%{background:#ef4444;}
 }
 
-.wrong-animate{
-animation:flashWrong 0.5s ease;
+.shake{
+animation:shake 0.4s;
 }
 
 @keyframes shake{
@@ -174,10 +178,6 @@ animation:flashWrong 0.5s ease;
 50%{transform:translateX(5px)}
 75%{transform:translateX(-5px)}
 100%{transform:translateX(0)}
-}
-
-.shake{
-animation:shake 0.4s;
 }
 
 .confetti{
