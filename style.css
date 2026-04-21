@@ -1,159 +1,281 @@
-function openPopup(){
-document.getElementById("popup").classList.add("active");
+:root{
+--primary:#ff512f;
+--secondary:#dd2476;
+--glass:rgba(255,255,255,0.95);
 }
 
-function closePopup(){
-document.getElementById("popup").classList.remove("active");
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-const correctSound=document.getElementById("correctSound");
-const wrongSound=document.getElementById("wrongSound");
-
-function launchConfetti(){
-
-for(let i=0;i<25;i++){
-
-const confetti=document.createElement("div");
-
-confetti.className="confetti";
-
-confetti.style.left=Math.random()*100+"vw";
-
-confetti.style.background=
-"hsl("+Math.random()*360+",100%,50%)";
-
-document.body.appendChild(confetti);
-
-setTimeout(()=>{
-confetti.remove();
-},1000);
-
+body{
+font-family:'Inter',Arial,sans-serif;
+min-height:100vh;
+background:linear-gradient(135deg,#ff512f,#f09819);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:15px;
 }
 
+.quiz-container{
+width:100%;
+max-width:520px;
+background:var(--glass);
+border-radius:20px;
+padding:25px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
 
-const questions=[
-
-{
-question:"Giá trị hàng hóa do?",
-options:["A. Cung cầu","B. Lao động","C. Tài nguyên","D. Công dụng"],
-answer:"B. Lao động"
-},
-
-{
-question:"Tiền là gì?",
-options:["A. Vật trao đổi","B. Hàng hóa đặc biệt","C. Kim loại","D. Tài sản"],
-answer:"B. Hàng hóa đặc biệt"
+.header{
+text-align:center;
+margin-bottom:20px;
 }
 
-];
-
-let pool=[];
-let index=0;
-let score=0;
-let locked=false;
-
-function startQuiz(){
-
-const limit=parseInt(document.getElementById("limit").value);
-
-pool=[...questions].sort(()=>Math.random()-0.5).slice(0,limit);
-
-index=0;
-score=0;
-
-document.getElementById("start").style.display="none";
-document.getElementById("quiz").style.display="block";
-
-loadQuestion();
-
+.logo{
+font-size:2rem;
+font-weight:800;
+background:linear-gradient(to right,#ff512f,#dd2476);
+background-clip:text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
-function loadQuestion(){
-
-locked=false;
-
-const q=pool[index];
-
-document.getElementById("qCount").innerText=
-"Câu "+(index+1)+"/"+pool.length;
-
-document.getElementById("question").innerText=q.question;
-
-const optionsDiv=document.getElementById("options");
-
-optionsDiv.innerHTML="";
-
-q.options.sort(()=>Math.random()-0.5).forEach(opt=>{
-
-const btn=document.createElement("div");
-
-btn.className="option";
-
-btn.innerText=opt;
-
-btn.onclick=()=>{
-
-if(locked) return;
-locked=true;
-
-if(opt===q.answer){
-
-score++;
-
-btn.classList.add("correct");
-btn.classList.add("correct-animate");
-
-correctSound.play();
-
-launchConfetti();
-
-}else{
-
-btn.classList.add("wrong");
-btn.classList.add("shake");
-btn.classList.add("wrong-animate");
-
-wrongSound.play();
-
+.tagline{
+font-size:0.85rem;
+color:#666;
+margin-top:4px;
 }
 
-document.querySelectorAll(".option").forEach(o=>{
-if(o.innerText===q.answer){
-o.classList.add("correct");
-}
-});
-
-setTimeout(()=>{
-
-index++;
-
-if(index<pool.length){
-loadQuestion();
-}else{
-showResult();
+.user{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-bottom:20px;
 }
 
-},1000);
-
-};
-
-optionsDiv.appendChild(btn);
-
-});
-
-document.getElementById("bar").style.width=
-((index)/pool.length)*100+"%";
-
+.click-text{
+font-weight:bold;
+color:var(--primary);
+margin-bottom:8px;
 }
 
-function showResult(){
+.avatar-btn img{
+width:70px;
+height:70px;
+border-radius:50%;
+object-fit:cover;
+cursor:pointer;
+transition:0.3s;
+}
 
-document.getElementById("quiz").style.display="none";
+.avatar-btn img:hover{
+transform:scale(1.1);
+}
 
-document.getElementById("result").style.display="block";
+.setup-card{
+background:#f8fafc;
+padding:20px;
+border-radius:15px;
+}
 
-document.getElementById("score").innerText=
-score+" / "+pool.length;
+.input-group{
+margin-bottom:20px;
+}
+
+label{
+font-size:0.9rem;
+display:block;
+margin-bottom:6px;
+}
+
+select{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+.progress-container{
+height:8px;
+background:#eee;
+border-radius:20px;
+margin-bottom:15px;
+overflow:hidden;
+}
+
+.progress-bar{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#ff512f,#dd2476);
+transition:0.5s;
+}
+
+.question{
+font-size:1.1rem;
+margin-bottom:15px;
+}
+
+.options{
+display:grid;
+gap:10px;
+}
+
+.option{
+padding:14px;
+border-radius:12px;
+cursor:pointer;
+font-weight:600;
+color:white;
+
+background:linear-gradient(270deg,#f9d423,#fc4a1a,#ff512f,#dd2476);
+background-size:600% 600%;
+animation:moveGradient 8s ease infinite;
+transition:0.25s;
+}
+
+.option:hover{
+transform:scale(1.05);
+}
+
+.correct{
+background:#22c55e !important;
+}
+
+.wrong{
+background:#ef4444 !important;
+}
+
+@keyframes popCorrect{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+.correct-animate{
+animation:popCorrect 0.4s ease;
+}
+
+@keyframes flashWrong{
+0%{background:#ef4444;}
+50%{background:#b91c1c;}
+100%{background:#ef4444;}
+}
+
+.wrong-animate{
+animation:flashWrong 0.5s ease;
+}
+
+@keyframes shake{
+0%{transform:translateX(0)}
+25%{transform:translateX(-5px)}
+50%{transform:translateX(5px)}
+75%{transform:translateX(-5px)}
+100%{transform:translateX(0)}
+}
+
+.shake{
+animation:shake 0.4s;
+}
+
+.confetti{
+position:fixed;
+width:8px;
+height:8px;
+top:-10px;
+z-index:9999;
+animation:fall 1s linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(100vh) rotate(360deg);
+opacity:0;
+}
+}
+
+.main-btn{
+width:100%;
+padding:14px;
+border-radius:12px;
+border:none;
+font-weight:700;
+cursor:pointer;
+color:white;
+
+background:linear-gradient(270deg,#ff512f,#dd2476,#f9d423,#fc4a1a);
+background-size:600% 600%;
+animation:moveGradient 6s ease infinite;
+}
+
+.main-btn:hover{
+transform:scale(1.05);
+}
+
+@keyframes moveGradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.result{
+text-align:center;
+}
+
+.popup-overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.6);
+display:flex;
+align-items:center;
+justify-content:center;
+visibility:hidden;
+opacity:0;
+transition:0.3s;
+}
+
+.popup-overlay.active{
+visibility:visible;
+opacity:1;
+}
+
+.popup-content{
+background:#fff;
+padding:40px;
+border-radius:28px;
+max-width:500px;
+width:95%;
+text-align:center;
+}
+
+.contact-item{
+background:#f8fafc;
+padding:12px;
+border-radius:16px;
+margin-bottom:10px;
+}
+
+.member-name{
+font-weight:800;
+display:block;
+margin-bottom:5px;
+}
+
+@media(max-width:500px){
+
+.quiz-container{
+padding:18px;
+}
+
+.option{
+padding:12px;
+font-size:0.9rem;
+}
+
+.logo{
+font-size:1.6rem;
+}
 
 }
