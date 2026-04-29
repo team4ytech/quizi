@@ -36,7 +36,7 @@
             <img src="https://i.postimg.cc/c1ky0k4T/anhteam.jpg" alt="avatar">
         </div>
 
-        <div>Hello bạn 👋</div>
+        <!-- <div>Hello bạn </div> -->
     </div>
 
     <div class="setup-card">
@@ -44,9 +44,11 @@
       <div class="input-group">
     <label>Chọn môn học</label>
     <select id="subject">
-    <option value="PLDC">Pháp luật đại cương</option>
-    <option value="LSD">Lịch sử Đảng</option>
+    <option value="LSD">Lịch sử Đảng Cộng sản Việt Nam</option>
     <option value="KTCT" selected>Kinh tế chính trị</option>
+    <option value="TTHCM">Tư tưởng Hồ Chí Minh</option>
+    <option value="Triet">Triết học Mác Lê-nin</option>
+    <option value="XHCN">Xã hội chủ nghĩa</option>
 </select>
 </div>
 
@@ -56,7 +58,19 @@
                 <option value="10">10</option>
                 <option value="20" selected>20</option>
                 <option value="50">50</option>
+                <option value="100">100</option>
             </select>
+        </div>
+
+        <div class="input-group exam-mode-group">
+            <label class="exam-toggle">
+                <input type="checkbox" id="examMode" onchange="toggleExamMode()">
+                <span>Chế độ kiểm tra (có thời gian)</span>
+            </label>
+            <div id="examTimeGroup" class="exam-time-group" style="display:none;">
+                <label>Thời gian (phút):</label>
+                <input type="number" id="examTime" value="15" min="1" max="120">
+            </div>
         </div>
 
         <button class="main-btn" onclick="startQuiz()">
@@ -70,27 +84,53 @@
 <!-- QUIZ -->
 <div id="quiz" style="display:none">
 
-    <div class="progress-container">
-        <div class="progress-bar" id="bar"></div>
+    <div class="quiz-header">
+        <div class="progress-container">
+            <div class="progress-bar" id="bar"></div>
+        </div>
+        <div id="timer" class="timer" style="display:none;">⏱️ <span id="timeDisplay">00:00</span></div>
     </div>
 
-    <div id="qCount"></div>
+    <div id="qCount" class="q-count-bold"></div>
 
     <div id="question" class="question"></div>
 
     <div id="options" class="options"></div>
+
+    <div class="nav-buttons" id="navButtons" style="display:none;">
+        <button class="nav-btn prev-btn" onclick="prevQuestion()">← Quay lại</button>
+        <button class="nav-btn next-btn" onclick="nextQuestion()">Tiếp tục →</button>
+    </div>
 
 </div>
 
 <!-- RESULT -->
 <div id="result" style="display:none" class="result">
 
-    <h2>Hoàn thành 🎉</h2>
+    <h2>Hoàn thành</h2>
 
     <div id="score"></div>
 
-    <button class="main-btn" onclick="location.reload()">
-        Làm tiếp
+    <div class="result-actions">
+        <button class="main-btn" onclick="showReview()">
+            📝 Xem lại câu hỏi
+        </button>
+        <button class="secondary-btn" onclick="location.reload()">
+            Làm tiếp
+        </button>
+    </div>
+
+</div>
+
+<!-- REVIEW -->
+<div id="review" style="display:none" class="review">
+
+    <h2>📋 Xem lại bài làm</h2>
+
+    <div id="reviewList" class="review-list"></div>
+
+    <button class="main-btn" onclick="backToResult()">
+        ← Quay lại
     </button>
 
 </div>
@@ -107,30 +147,28 @@
 
     <h3>Dịch Vụ Công Nghệ & Phần Mềm</h3>
 
-    <p>
-        Chuyên xây dựng Website, Mobile App, AI
-    </p>
-
-    <div class="contact-item">
-        <span class="member-name">
-            Hoàng Huyền Linh
-        </span>
-
-        <a href="tel:0376740352">Zalo</a> |
-        <a href="https://www.facebook.com/lizarddh" target="_blank">
-            FB
-        </a>
+    <div class="services-highlight">
+        <p class="service-item">🔹 Chuyên xây dựng <strong>Website</strong></p>
+        <p class="service-item">🔹 Chuyên xây dựng <strong>Phần mềm</strong></p>
+        <p class="service-item">🔹 <strong>Bài tập lớn</strong></p>
+        <p class="service-item">🔹 <strong>Nghiên cứu khoa học</strong></p>
     </div>
 
     <div class="contact-item">
         <span class="member-name">
-            Nguyễn Bình
+            Nguyễn Bình : 
         </span>
 
         <a href="tel:0822612822">Zalo</a> |
         <a href="https://www.facebook.com/nguyen.binh.604032" target="_blank">
             FB
         </a>
+    </div>
+
+    <div class="contact-item">
+        <span class="member-name">
+            SĐT: 0376740352
+        </span>
     </div>
 
     <button class="main-btn" onclick="closePopup()">
@@ -149,7 +187,11 @@
 <audio id="wrongSound" src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-buzz-950.mp3"></audio>
 
 <!-- JS -->
-
+<script src="database/db_KTCT.js"></script>
+<script src="database/db_LSD.js"></script>
+<script src="database/db_TTHCM.js"></script>
+<script src="database/db_triet.js"></script>
+<script src="database/db_xhcn.js"></script>
 <script src="script.js"></script>
 
 </body>
