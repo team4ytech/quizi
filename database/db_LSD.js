@@ -69,7 +69,7 @@
   id: 12,
   question: "Hội nghị thành lập Đảng Cộng sản Việt Nam diễn ra vào thời gian nào?",
   options: ["A. 6/1/1930 – 7/2/1930", "B. 3/2/1930 – 7/2/1930", "C. 6/1/1930 – 3/2/1930", "D. 16/1/1930 – 7/2/1930"],
-  answer: "B. 3/2/1930 – 7/2/1930"
+  answer: "A. 6/1/1930 – 7/2/1930"
 },
 {
   id: 13,
@@ -81,7 +81,7 @@
   id: 14,
   question: "Đâu KHÔNG PHẢI là nội dung Hội nghị thành lập Đảng?",
   options: ["A. Các đại biểu đồng ý hợp nhất các tổ chức cộng sản", "B. Ngày 24/2/1930, Đông Dương Cộng sản Liên đoàn gia nhập Đảng", "C. Thông qua các văn kiện do Nguyễn Ái Quốc soạn thảo", "D. Hội nghị định ra kế hoạch thống nhất trong nước"],
-  answer: "D. Hội nghị định ra kế hoạch thống nhất trong nước"
+  answer: "B. Ngày 24/2/1930, Đông Dương Cộng sản Liên đoàn gia nhập Đảng"
 },
 {
   id: 15,
@@ -93,7 +93,7 @@
   id: 16,
   question: "Cương lĩnh chính trị đầu tiên của Đảng đã xác định phương hướng chiến lược của cách mạng Việt Nam là gì?",
   options: ["A. Đánh đổ đế quốc và phong kiến", "B. Tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản", "C. Làm cách mạng tư sản dân quyền có tính chất thổ địa và phản đế", "D. Cả A và B"],
-  answer: "D. Cả A và B"
+  answer: "B. Tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản"
 },
 {
   id: 17,
@@ -105,7 +105,7 @@
   id: 18,
   question: "Điểm khác nhau giữa Cương lĩnh chính trị đầu tiên và Luận cương chính trị tháng 10/1930 là:",
   options: ["A. Chủ trương tập hợp lực lượng cách mạng", "B. Phương hướng chiến lược của cách mạng", "C. Giai cấp lãnh đạo cách mạng", "D. Quan hệ quốc tế"],
-  answer: "C. Giai cấp lãnh đạo cách mạng"
+  answer: "A. Chủ trương tập hợp lực lượng cách mạng."
 },
 {
   id: 19,
@@ -117,7 +117,7 @@
   id: 20,
   question: "Dưới sự lãnh đạo của Đảng, hình thức tổ chức và đấu tranh của cách mạng Việt Nam trong giai đoạn 1936-1939 là gì?",
   options: ["A. Công khai, hợp pháp", "B. Nửa công khai, nửa hợp pháp", "C. Bí mật, bất hợp pháp", "D. Tất cả các hình thức trên"],
-  answer: "A. Công khai, hợp pháp"
+  answer: "D. Tất cả các hình thức trên."
 },
 {
   id: 21,
@@ -195,7 +195,7 @@
   id: 33,
   question: "Cuộc Tổng khởi nghĩa giành chính quyền của nhân dân Việt Nam diễn ra thời gian nào?",
   options: ["A. 13/8 – 16/8/1945", "B. 13/8 – 19/8/1945", "C. 14/8 – 28/8/1945", "D. 14/8 – 30/8/1945"],
-  answer: "B. 13/8 – 19/8/1945"
+  answer: "C. Từ ngày 14/8 đến ngày 28/8 năm 1945."
 },
 {
   id: 34,
@@ -213,7 +213,7 @@
   id: 36,
   question: "Ý nghĩa quốc tế của Cách mạng tháng Tám là gì?",
   options: ["A. Lật đổ ách thống trị thực dân, phong kiến", "B. Cơ sở cho sự ra đời của nhà nước Việt Nam Dân chủ Cộng hòa", "C. Chọc thủng một khâu quan trọng trong hệ thống thuộc địa của chủ nghĩa đế quốc", "D. Cả A, B và C"],
-  answer: "D. Cả A, B và C"
+  answer: "C. C học thủng một khâu quan trọng trong hệ thống thuộc địa của chủ nghĩa đế quốc, mở đầu thời kỳ sụp đổ và tan rã của chủ nghĩa thực dân cũ."
 },
 {
   id: 37,
@@ -363,7 +363,7 @@
   id: 61,
   question: "Câu nói: 'Miền Nam là máu của máu Việt Nam, là thịt của thịt Việt Nam. Sông có thể cạn, núi có thể mòn song chân lý đó không bao giờ thay đổi' là của ai?",
   options: ["A. Chủ tịch Hồ Chí Minh", "B. Tổng Bí thư Trường Chinh", "C. Tổng Bí thư Lê Duẩn", "D. Thủ tướng Phạm Văn Đồng"],
-  answer: "C. Tổng Bí thư Lê Duẩn"
+  answer: "A. Chủ tịch Hồ Chí Minh."
 },
 {
   id: 62,
@@ -411,7 +411,7 @@
   id: 69,
   question: "Chủ trương khắc phục khuyết điểm trong quản lý kinh tế, phá bỏ rào cản để 'sản xuất bung ra' được nêu ở Hội nghị nào?",
   options: ["A. Hội nghị lần thứ năm (12/1978)", "B. Hội nghị lần thứ sáu (8/1979)", "C. Hội nghị lần thứ bảy (3/1980)", "D. Hội nghị lần thứ tám (9/1980)"],
-  answer: "A. Hội nghị lần thứ năm (12/1978)"
+  answer: "B. Hội nghị lần thứ sáu (8/1979)."
 },
 {
   id: 70,
@@ -429,7 +429,7 @@
   id: 72,
   question: "Đại hội nào của Đảng đã chủ trương coi nông nghiệp là mặt trận hàng đầu?",
   options: ["A. Đại hội III (1960)", "B. Đại hội IV (1976)", "C. Đại hội V (1982)", "D. B và C đều đúng"],
-  answer: "D. B và C đều đúng"
+  answer: "C. Đại hội V (3/1982)."
 },
 {
   id: 73,
@@ -447,19 +447,19 @@
   id: 75,
   question: "Hội nghị nào được coi như bước quyết định cho sự ra đời đường lối đổi mới của Đảng?",
   options: ["A. Hội nghị lần thứ sáu (8/1979)", "B. Hội nghị lần thứ tám (6/1985)", "C. Hội nghị lần thứ chín (12/1985)", "D. Hội nghị Bộ Chính trị (8/1986)"],
-  answer: "B. Hội nghị lần thứ tám (6/1985)"
+  answer: "D. Hội nghị Bộ Chính trị khóa V (8/1986)."
 },
 {
   id: 76,
   question: "Chủ trương xây dựng và tổ chức thực hiện ba chương trình kinh tế lớn về lương thực, hàng tiêu dùng, hàng xuất khẩu được Đảng đề ra tại Đại hội nào?",
   options: ["A. Đại hội IV", "B. Đại hội V", "C. Đại hội VI", "D. Đại hội VII"],
-  answer: "B. Đại hội V"
+  answer: "C. Đại hội VI của Đảng."
 },
 {
   id: 77,
   question: "Đại hội VI của Đảng (12/1986) rút ra bài học kinh nghiệm quý báu nào?",
   options: ["A. Nắm vững quan điểm bạo lực cách mạng", "B. Xuất phát từ thực tế, tôn trọng quy luật khách quan", "C. Giương cao ngọn cờ độc lập dân tộc và CNXH", "D. Cả A, B và C"],
-  answer: "D. Cả A, B và C"
+  answer: "B . Đảng phải luôn luôn xuất phát từ thực tế, tôn trọng và hành động theo quy luật khách quan."
 },
 {
   id: 78,
@@ -481,123 +481,123 @@
 },
 {
   id: 81,
-  question: "Sau Đại hội VI, Đảng tập trung đổi mới lĩnh vực nào trước tiên?",
-  options: ["A. Chính trị", "B. Kinh tế", "C. Văn hóa", "D. Giáo dục"],
-  answer: "B. Kinh tế"
+  question: "Đại hội VI của Đảng (12/1986) đề ra bao nhiêu phương hướng lớn để phát triển kinh tế?",
+  options: ["A.2", "B. 3", "C. 4", "D. 5"],
+  answer: "D.5"
 },
 {
   id: 82,
-  question: "Đổi mới kinh tế ở Việt Nam sau 1986 chủ yếu theo hướng nào?",
-  options: ["A. Tập trung quan liêu bao cấp", "B. Kinh tế thị trường định hướng XHCN", "C. Kinh tế tư bản chủ nghĩa", "D. Kinh tế tự cung tự cấp"],
-  answer: "B. Kinh tế thị trường định hướng XHCN"
+  question:  âu là văn kiện quan trọng được thông qua tại Đại hội VII (6/1991) của Đảng",
+  options: [" . Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH.", "B.B. Chiến lược  ổn định và phát triển kinh tế - xã hội đến năm 2000.", "C. CảA và B.", "D.Không đáp án nào đúng."],
+  answer: "C. CảA và B."
 },
 {
   id: 83,
-  question: "Đại hội VII của Đảng (1991) thông qua văn kiện nào quan trọng?",
-  options: ["A. Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH", "B. Hiến pháp 1992", "C. Nghị quyết đổi mới giáo dục", "D. Chiến lược phát triển kinh tế"],
-  answer: "A. Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH"
+  question: "Đại hội nào đã chính thức đưa tư tưởng Hồ Chí Minh vào nền tảng tư tưởng của Đảng, bên cạnh chủ nghĩa Mác  - Lênin và khẳng định đó là kim chỉ nam cho mọi hành động của Đảng và toàn dân tộc?",
+  options: ["A. Đại hội VI của Đảng.", "B. Đại hội VII  của Đảng.", "C.  Đại hội VIII của Đảng.", "D. Đại hội IX của Đảng."],
+  answer: "B. Đại hội VII  của Đảng."
 },
 {
   id: 84,
-  question: "Đại hội VIII của Đảng (1996) xác định nhiệm vụ trọng tâm là gì?",
-  options: ["A. Công nghiệp hóa, hiện đại hóa đất nước", "B. Đổi mới chính trị", "C. Phát triển văn hóa", "D. Hội nhập quốc tế"],
-  answer: "A. Công nghiệp hóa, hiện đại hóa đất nước"
+  question: "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH thông qua tại Đại hội VII năm 1991 của Đảng đã khẳng định xã hội XHCN mà nhân dân ta xây dựng có mấy đặc trưng?",
+  options: ["A. 6", "B.7", "C.8", "D. 10"],
+  answer: "A. 6"
 },
 {
   id: 85,
-  question: "Đại hội IX của Đảng (2001) thông qua Chiến lược phát triển kinh tế - xã hội đến năm nào?",
-  options: ["A. 2010", "B. 2020", "C. 2030", "D. 2050"],
-  answer: "B. 2020"
+  question: "Nước ta đã ra khỏi khủng hoảng kinh tế - xã hội nhưng một số mặt còn chưa vững chắc" là đánh giá tổng quát của Đại hội nào?",
+  options: ["A. Đại hội VI của Đảng.", "B.Đại hội VII của Đảng.", "C. Đại hội VIII của Đảng.", "D. ĐạihộiIXcủaĐảng."],
+  answer: "C. Đại hội VIII của Đảng."
 },
 {
   id: 86,
-  question: "Đại hội X của Đảng (2006) nhấn mạnh nhiệm vụ gì?",
-  options: ["A. Đẩy mạnh CNH-HĐH gắn với phát triển kinh tế tri thức", "B. Đổi mới chính trị", "C. Phát triển văn hóa", "D. Hội nhập quốc tế"],
-  answer: "A. Đẩy mạnh CNH-HĐH gắn với phát triển kinh tế tri thức"
+  question: "Đại hội nào của Đảng quyết định đưa đất nước ta bước sang thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa?",
+  options: ["A. Đại hội VIII của Đảng.", "B. Đại hội IX của Đảng.", "C. Đại hội X của Đảng.", "D. Đại hội XI của Đảng."],
+  answer: "A. Đại hội VIII của Đảng"
 },
 {
   id: 87,
-  question: "Đại hội XI của Đảng (2011) thông qua Chiến lược phát triển kinh tế - xã hội đến năm nào?",
-  options: ["A. 2020", "B. 2030", "C. 2040", "D. 2050"],
-  answer: "A. 2020"
+  question: " ại hội VIII của Đảng (7/1996) đã xác định cần phát huy nguồn lực nào là yếu tố cơ bản cho sự phát triển nhanh và bền vững của quá trình công nghiệp hóa, hiện đại hóa  ở nước ta?",
+  options: ["A. Khoa học công nghệ.", "B. Tài nguyên thiên nhiên.", "C. Vốn.", "D. Con người."],
+  answer: "D. Con người."
 },
 {
   id: 88,
-  question: "Đại hội XII của Đảng (2016) xác định nhiệm vụ trọng tâm là gì?",
-  options: ["A. Xây dựng Đảng trong sạch vững mạnh", "B. Đẩy mạnh CNH-HĐH", "C. Phát triển văn hóa", "D. Hội nhập quốc tế"],
-  answer: "A. Xây dựng Đảng trong sạch vững mạnh"
+  question: "Đại hội VIII của Đảng đã xác định động lực của quá trình công nghiệp hóa, hiện đại hóa ở  nước ta là:",
+  options: ["A. Con người.", "B. Tài nguyên thiên nhiên", "C. Vốn.", "D. Khoa học công nghệ."],
+  answer: "D. Khoa học công nghệ."
 },
 {
   id: 89,
-  question: "Đại hội XIII của Đảng (2021) thông qua Chiến lược phát triển kinh tế - xã hội đến năm nào?",
-  options: ["A. 2030", "B. 2045", "C. 2050", "D. 2060"],
-  answer: "B. 2045"
+  question: "Tại Đại hội VIII (1996) của Đảng, quan điểm nào lần đầu tiên được đề cập một cách chính thức:",
+  options: ["A. Giáo dục là quốc sách hàng đầu.", "B. Giáo dục hướng tới phát triển con người toàn diện.", "C.Văn hóa soi đường cho quốc dân đi.", "D. Văn hóa là nền tảng tinh thần của xã hội."],
+  answer: "A. Giáo dục là quốc sách hàng đầu."
 },
 {
   id: 90,
-  question: "Đại hội XIII của Đảng (2021) đặt mục tiêu đến năm 2030 là gì?",
-  options: ["A. Việt Nam trở thành nước đang phát triển có công nghiệp hiện đại", "B. Việt Nam trở thành nước phát triển", "C. Việt Nam trở thành nước XHCN hoàn chỉnh", "D. Việt Nam trở thành trung tâm khu vực"],
-  answer: "A. Việt Nam trở thành nước đang phát triển có công nghiệp hiện đại"
+  question: "Thế nào là Nhà nước pháp quyền xã hội chủ",
+  options: ["A.  Đó là Nhà nước của dân, do dân, vì dân.", "B. Đó là Nhà nước do Đảng Cộng sản Việt Nam lãnh đạo.", "C.Đó là Nhà nước tôn trọng và đảm bảo quyền con người.", "D. Đó là Nhà nước quản lý xã hội bằng Hiến pháp và pháp luật; pháp luật giữ vị trí tối thượng,rong việc điều chỉnh các quan hệ xã hội, người dân được hưởng mọi quyền dân chủ, có quyền tự do sống và làm việc theo khả năng và sở thích của mình trong phạm vi pháp luật cho phép. "],
+  answer: "D. Đó là Nhà nước quản lý xã hội bằng Hiến pháp và pháp luật; pháp luật giữ vị trí tối thượng,rong việc điều chỉnh các quan hệ xã hội, người dân được hưởng mọi quyền dân chủ, có quyền tự do sống và làm việc theo khả năng và sở thích của mình trong phạm vi pháp luật cho phép."
 },
 {
   id: 91,
-  question: "Đại hội XIII của Đảng (2021) đặt mục tiêu đến năm 2045 là gì?",
-  options: ["A. Việt Nam trở thành nước phát triển, thu nhập cao", "B. Việt Nam trở thành nước công nghiệp hiện đại", "C. Việt Nam trở thành trung tâm khu vực", "D. Việt Nam trở thành quốc gia XHCN hoàn chỉnh"],
-  answer: "A. Việt Nam trở thành nước phát triển, thu nhập cao"
+  question: " Mặt trận Tổ quốc Việt Nam có vai trò gì?",
+  options: ["A. Củng cố và tăng cường khối đại đoàn kết dân tộc để góp phần xây dựng và bảo vệ Tổ quốc.", "B.Lãnh đạo nhân dân tiến hành xây dựng CNXH.", "C. Quản lý xã hội bằng Hiến pháp và pháp luật.", "D. Tạo ra của cải cho xã hội."],
+  answer: "A. Củng cố và tăng cường khối đại đoàn kết dân tộc để góp phần xây dựng và bảo vệ Tổ quốc."
 },
 {
   id: 92,
-  question: "Đại hội XIII của Đảng (2021) xác định bao nhiêu nhiệm vụ trọng tâm?",
-  options: ["A. 2", "B. 3", "C. 4", "D. 5"],
-  answer: "C. 4"
+  question: " N ghị quyết số 03-NQ/TW ngày 16/7/1998 về xây dựng và phát triển nền văn hoá Việt Nam tiên tiến, đậm đà bản sắc dân tộc của Hội nghị Trung ương 5 khoá VIII có ý nghĩa như thế nào? ",
+  options: ["A.Như một bản cương lĩnh văn hóa đầu tiên của Đảng.", "B.Như một báo cáo tổng kết của Đảng về xây dựng và phát triển văn hóa Việt Nam.", "C.  Như một đề án xây dựng và phát triển văn hóa Việt Nam thời kỳ hội nhập.", "D. Như một tuyên ngôn văn hóa của Đảng trong thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa"],
+  answer: "D .Như một tuyên ngôn văn hóa của Đảng trong thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa"
 },
 {
   id: 93,
-  question: "Một trong những nhiệm vụ trọng tâm của Đại hội XIII là gì?",
-  options: ["A. Xây dựng Đảng trong sạch vững mạnh", "B. Đẩy mạnh CNH-HĐH", "C. Phát triển văn hóa", "D. Hội nhập quốc tế"],
-  answer: "A. Xây dựng Đảng trong sạch vững mạnh"
+  question: "Nâng cao năng lực lãnh đạo và sức chiến đấu của Đảng, phát huy sức mạnh toàn dân tộc, đẩy mạnh toàn diện công cuộc đổi mới sớm đưa nước ta ra khỏi tình trạng kém phát triển. Đây là chủ đề của Đại hội Đảng nào?",
+  options: ["A.  Đại hội VI của Đảng.", "B. Đại hội VIII của Đảng.", "C.  Đ ại hội X của Đảng.", "D. ĐạihộiXIIcủaĐảng."],
+  answer: "C. Đại hội X của Đảng."
 },
 {
   id: 94,
-  question: "Đại hội XIII của Đảng (2021) thông qua Chiến lược phát triển kinh tế - xã hội giai đoạn nào?",
-  options: ["A. 2021–2030", "B. 2021–2045", "C. 2021–2050", "D. 2021–2060"],
-  answer: "A. 2021–2030"
+  question: " Đại hội X của Đảng diễn ra vào thời gian nào?",
+  options: ["A. Tháng 4 năm 2001.", "B. Tháng 4 năm 2006. ", "C.Tháng 1 năm 2011. ", "D.Tháng 1 năm 2016."],
+  answer: "D.Tháng 4 năm 2006."
 },
 {
   id: 95,
-  question: "Đại hội XIII của Đảng (2021) thông qua Tầm nhìn phát triển đất nước đến năm nào?",
-  options: ["A. 2030", "B. 2045", "C. 2050", "D. 2060"],
-  answer: "B. 2045"
+  question: " ại hội nào đã quyết định bổ sung, phát triển Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH năm 1991?",
+  options: ["A.  Đại hội VIII của Đảng.", "B. Đại hội IX của Đảng.", "C.Đại hội X của Đảng.", "D.  Đại hội XI của Đảng."],
+  answer: "D. Đại hội XI của Đảng."
 },
 {
   id: 96,
-  question: "Đại hội XIII của Đảng (2021) xác định bao nhiêu định hướng phát triển đất nước?",
-  options: ["A. 5", "B. 6", "C. 7", "D. 8"],
-  answer: "D. 8"
+  question:" Đâu  KHÔNG PHẢI  là đặc trưng của xã hội XHCN ở  nước ta được nêu trong Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH  ở nước ta (bổ sung, phát triển năm 2011)?",
+  options: ["A. Có nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại và quan hệ sản xuất tiến bộ phùhợp. ", "B. Có nền văn hóa tiên tiến, đậm đà bản sắc dân tộc.", "C. Có Nhà nước dân chủ nhân dân do Đảng Cộng sản Việt Nam lãnh đạo.", "D. Có quan hệ hữu nghị và hợp tác với các nước trên thế giới."],
+  answer: "C. Có Nhà nước dân chủ nhân dân do Đảng Cộng sản Việt Nam lãnh đạo."
 },
 {
   id: 97,
-  question: "Một trong những định hướng phát triển đất nước tại Đại hội XIII là gì?",
-  options: ["A. Phát triển nhanh và bền vững dựa trên khoa học công nghệ", "B. Tăng trưởng kinh tế dựa vào khai thác tài nguyên", "C. Phát triển theo mô hình tự cung tự cấp", "D. Tập trung vào nông nghiệp truyền thống"],
-  answer: "A. Phát triển nhanh và bền vững dựa trên khoa học công nghệ"
+  question: " Đại hội XII của Đảng (2016) đã bầu ai làm Tổng Bí thư?",
+  options: ["A.  TBT Lê Khả Phiêu.", "B.TBT Nông Đức Mạnh.", "C.  BT Nguyễn Phú Trọng.", "D.  TBT Tô Lâm."],
+  answer: "C. TBT Nguyễn Phú Trọng."
 },
 {
   id: 98,
-  question: "Đại hội XIII của Đảng (2021) nhấn mạnh yêu cầu gì đối với công tác xây dựng Đảng?",
-  options: ["A. Xây dựng Đảng trong sạch vững mạnh toàn diện", "B. Xây dựng Đảng theo mô hình tập trung quan liêu", "C. Xây dựng Đảng theo mô hình tư bản chủ nghĩa", "D. Xây dựng Đảng theo mô hình tự quản"],
-  answer: "A. Xây dựng Đảng trong sạch vững mạnh toàn diện"
+  question: "Đ âu K HÔNG PHẢI l à một trong ba khâu đột phá chiến lược được xác định tại Đại hội XIII của Đảng (2021)?",
+  options: ["A. Hoàn thiện thể chế phát triển.", "B.Phát triển nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao.", "C. Đổi mới tổ chức bộ máy và phương thức hoạt động của hệ thống chính trị.", "D. Xây dựng kết cấu hạ tầng đồng bộ, hiện đại."],
+  answer: "C. Đổi mới tổ chức bộ máy và phương thức hoạt động của hệ thống chính trị."
 },
 {
   id: 99,
-  question: "Đại hội XIII của Đảng (2021) đặt mục tiêu phát triển kinh tế - xã hội đến năm 2025 là gì?",
-  options: ["A. Việt Nam trở thành nước đang phát triển có công nghiệp theo hướng hiện đại", "B. Việt Nam trở thành nước phát triển", "C. Việt Nam trở thành trung tâm khu vực", "D. Việt Nam trở thành quốc gia XHCN hoàn chỉnh"],
-  answer: "A. Việt Nam trở thành nước đang phát triển có công nghiệp theo hướng hiện đại"
+  question: " ông nghiệp hóa, hiện đại hóa ở  nước ta là sự nghiệp của thành phần kinh tế nào?",
+  options: ["A.  Kinh tế Nhà nước.", "B. Kinh tế tư nhân.", "C. Kinh tế có vốn đầu tư nước ngoài.", "D.  Tất cả các thành phần kinh tế."],
+  answer: "D. Tất cả các thành phần kinh tế."
 },
 {
   id: 100,
-  question: "Đại hội XIII của Đảng (2021) đặt mục tiêu đến năm 2030 là gì?",
-  options: ["A. Việt Nam trở thành nước đang phát triển có công nghiệp hiện đại, thu nhập trung bình cao", "B. Việt Nam trở thành nước phát triển", "C. Việt Nam trở thành trung tâm khu vực", "D. Việt Nam trở thành quốc gia XHCN hoàn chỉnh"],
-  answer: "A. Việt Nam trở thành nước đang phát triển có công nghiệp hiện đại, thu nhập trung bình cao"
+  question: "Nghị quyết Đại hội XIII của Đảng đặt mục tiêu đến năm bao nhiêu Việt Nam sẽ trở thành nước công nghiệp theo hướng hiện đại, thu nhập trung bình cao?",
+  options: ["A.2010", "B.2015", "C.2020", "D.2030"],
+  answer: "D.2030"
 }
 
 ];
